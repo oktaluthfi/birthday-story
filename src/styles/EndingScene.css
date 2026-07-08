@@ -1,0 +1,269 @@
+.ending-scene{
+
+position:relative;
+
+min-height:100vh;
+
+padding:120px 20px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+overflow:hidden;
+
+background:
+
+linear-gradient(
+
+180deg,
+
+#352c85,
+
+#6656f8,
+
+#8d7cff,
+
+#f9dcec
+
+);
+
+}
+
+/* Aurora */
+
+.ending-gradient{
+
+position:absolute;
+
+inset:0;
+
+background:
+
+radial-gradient(circle at top,
+
+rgba(255,255,255,.18),
+
+transparent 40%),
+
+radial-gradient(circle at bottom,
+
+rgba(255,255,255,.12),
+
+transparent 35%);
+
+filter:blur(30px);
+
+}
+
+/* Glow */
+
+.ending-glow{
+
+position:absolute;
+
+width:700px;
+
+height:700px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(circle,
+
+rgba(255,255,255,.18),
+
+transparent 70%);
+
+filter:blur(80px);
+
+}
+
+/* Stars */
+
+.stars{
+
+position:absolute;
+
+inset:0;
+
+overflow:hidden;
+
+}
+
+.stars span{
+
+position:absolute;
+
+width:3px;
+
+height:3px;
+
+background:white;
+
+border-radius:50%;
+
+opacity:.6;
+
+animation:twinkle 4s infinite;
+
+}
+
+@keyframes twinkle{
+
+0%,100%{
+
+opacity:.2;
+
+transform:scale(1);
+
+}
+
+50%{
+
+opacity:1;
+
+transform:scale(2);
+
+}
+
+}
+
+/* Card */
+
+.ending-card{
+
+position:relative;
+
+z-index:5;
+
+width:min(760px,95%);
+
+padding:70px;
+
+background:rgba(255,255,255,.92);
+
+backdrop-filter:blur(16px);
+
+border-radius:32px;
+
+box-shadow:
+
+0 30px 80px rgba(0,0,0,.22);
+
+text-align:center;
+
+}
+
+/* Small */
+
+.ending-small{
+
+display:inline-block;
+
+margin-bottom:24px;
+
+letter-spacing:4px;
+
+font-size:13px;
+
+font-weight:bold;
+
+color:#7866ff;
+
+}
+
+/* Title */
+
+.ending-card h1{
+
+font-family:"Playfair Display",serif;
+
+font-size:60px;
+
+color:#4d399c;
+
+margin-bottom:35px;
+
+}
+
+/* Text */
+
+.ending-card p{
+
+font-size:18px;
+
+line-height:2.2;
+
+color:#555;
+
+white-space:pre-line;
+
+}
+
+/* Signature */
+
+.signature{
+
+margin-top:70px;
+
+}
+
+.signature h2{
+
+font-size:20px;
+
+color:#777;
+
+font-weight:400;
+
+}
+
+.signature h1{
+
+font-size:46px;
+
+font-family:"Playfair Display",serif;
+
+color:#725cff;
+
+margin:10px 0;
+
+}
+
+.signature span{
+
+color:#999;
+
+font-size:14px;
+
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.ending-card{
+
+padding:40px 30px;
+
+}
+
+.ending-card h1{
+
+font-size:42px;
+
+}
+
+.ending-card p{
+
+font-size:16px;
+
+line-height:2;
+
+}
+
+}

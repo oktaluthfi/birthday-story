@@ -1,0 +1,303 @@
+/* ========================================= */
+/* PAGE */
+/* ========================================= */
+
+.memory-page{
+
+    position:relative;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    padding:140px 0;
+
+    background:
+    linear-gradient(
+    180deg,
+    #6453F5 0%,
+    #8576FF 35%,
+    #BCA8FF 70%,
+    #FFE1F1 100%);
+
+}
+
+/* ========================================= */
+/* BACKGROUND */
+/* ========================================= */
+
+.memory-bg-gradient{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at 20% 20%,
+    rgba(255,255,255,.18),
+    transparent 28%),
+
+    radial-gradient(circle at 80% 35%,
+    rgba(255,255,255,.12),
+    transparent 35%),
+
+    radial-gradient(circle at bottom,
+    rgba(255,255,255,.10),
+    transparent 40%);
+
+    filter:blur(25px);
+
+    pointer-events:none;
+
+}
+
+/* ========================================= */
+
+.memory-stars{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:0;
+
+    background-image:
+
+    radial-gradient(circle,rgba(255,255,255,.9) 1px,transparent 1px),
+
+    radial-gradient(circle,rgba(255,255,255,.55) 1px,transparent 1px);
+
+    background-size:
+
+    180px 180px,
+
+    280px 280px;
+
+    opacity:.45;
+
+    animation:starsMove 18s linear infinite;
+
+}
+
+/* ========================================= */
+
+@keyframes starsMove{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+100%{
+
+transform:translateY(-160px);
+
+}
+
+}
+
+/* ========================================= */
+/* HERO */
+/* ========================================= */
+
+.memory-intro{
+
+    position:relative;
+
+    z-index:2;
+
+    width:min(760px,90%);
+
+    margin:auto;
+
+    margin-bottom:120px;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+/* ========================================= */
+
+.memory-tag{
+
+    display:inline-block;
+
+    padding:8px 22px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(10px);
+
+    margin-bottom:28px;
+
+    letter-spacing:3px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+/* ========================================= */
+
+.memory-intro h1{
+
+    font-size:72px;
+
+    font-family:"Playfair Display",serif;
+
+    margin-bottom:30px;
+
+    line-height:1.1;
+
+}
+
+/* ========================================= */
+
+.memory-intro p{
+
+    font-size:22px;
+
+    line-height:2.1;
+
+    opacity:.95;
+
+}
+
+/* ========================================= */
+/* FINISH */
+/* ========================================= */
+
+.memory-finish{
+
+    width:min(700px,90%);
+
+    margin:120px auto 40px;
+
+    text-align:center;
+
+    color:white;
+
+}
+
+/* ========================================= */
+
+.memory-finish p{
+
+    font-size:28px;
+
+    font-family:"Playfair Display",serif;
+
+    line-height:2;
+
+    margin-bottom:40px;
+
+}
+
+/* ========================================= */
+
+.finish-btn{
+
+    border:none;
+
+    padding:18px 48px;
+
+    border-radius:999px;
+
+    cursor:pointer;
+
+    background:white;
+
+    color:#6755F8;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.35s;
+
+    box-shadow:
+
+    0 18px 40px rgba(0,0,0,.18);
+
+}
+
+/* ========================================= */
+
+.finish-btn:hover{
+
+    transform:
+
+    translateY(-6px)
+
+    scale(1.05);
+
+    box-shadow:
+
+    0 30px 60px rgba(0,0,0,.22);
+
+}
+
+/* ========================================= */
+/* MOBILE */
+/* ========================================= */
+
+@media(max-width:900px){
+
+.memory-page{
+
+padding:100px 0;
+
+}
+
+.memory-intro{
+
+margin-bottom:80px;
+
+}
+
+.memory-intro h1{
+
+font-size:48px;
+
+}
+
+.memory-intro p{
+
+font-size:18px;
+
+line-height:1.8;
+
+}
+
+.memory-tag{
+
+font-size:11px;
+
+letter-spacing:2px;
+
+}
+
+.memory-finish p{
+
+font-size:22px;
+
+}
+
+.finish-btn{
+
+width:90%;
+
+max-width:330px;
+
+}
+
+}

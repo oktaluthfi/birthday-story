@@ -1,0 +1,145 @@
+/* ========================================= */
+/* QUOTE */
+/* ========================================= */
+
+.quote-divider{
+
+    width:min(850px,92%);
+
+    margin:150px auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:28px;
+
+    position:relative;
+
+    z-index:2;
+
+    color:white;
+
+}
+
+/* ========================================= */
+
+.quote-decoration{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    width:100%;
+
+}
+
+/* ========================================= */
+
+.quote-line{
+
+    flex:1;
+
+    height:1px;
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    transparent,
+
+    rgba(255,255,255,.7),
+
+    transparent
+
+    );
+
+}
+
+/* ========================================= */
+
+.quote-decoration span{
+
+    font-size:24px;
+
+    animation:floatIcon 3s ease-in-out infinite;
+
+}
+
+/* ========================================= */
+
+.quote-divider p{
+
+    font-size:38px;
+
+    font-family:"Playfair Display",serif;
+
+    text-align:center;
+
+    line-height:1.8;
+
+    font-style:italic;
+
+    max-width:760px;
+
+    text-shadow:
+
+    0 4px 20px rgba(0,0,0,.18);
+
+}
+
+/* ========================================= */
+
+@keyframes floatIcon{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ========================================= */
+
+@media(max-width:900px){
+
+.quote-divider{
+
+margin:110px auto;
+
+}
+
+.quote-divider p{
+
+font-size:28px;
+
+line-height:1.6;
+
+}
+
+.quote-decoration span{
+
+font-size:20px;
+
+}
+
+}

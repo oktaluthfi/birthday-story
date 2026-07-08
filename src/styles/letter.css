@@ -1,0 +1,284 @@
+/* ========================= */
+/* LETTER SCENE */
+/* ========================= */
+
+.letter-scene{
+    width:100vw;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(135deg,#5c47ea,#bca7ff);
+
+    overflow:hidden;
+}
+
+/* ========================= */
+/* ENVELOPE */
+/* ========================= */
+
+.envelope-box{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+
+    cursor:pointer;
+}
+
+.envelope-img{
+    width:300px;
+
+    animation:float 3s ease-in-out infinite;
+    transition:.3s;
+}
+
+.envelope-img:hover{
+    transform:scale(1.05);
+}
+
+.envelope-box p{
+    color:white;
+    font-size:22px;
+    font-weight:600;
+}
+
+/* ========================= */
+/* OPEN ENVELOPE */
+/* ========================= */
+
+.open-envelope-only{
+
+    width:360px;
+
+    animation:openAnim .8s ease;
+}
+
+/* ========================= */
+/* PAPER */
+/* ========================= */
+
+.paper{
+
+    width:760px;
+    height:82vh;
+
+    background:#fffdf8;
+
+    border-radius:22px;
+
+    padding:45px 55px;
+
+    display:flex;
+    flex-direction:column;
+
+    box-shadow:
+    0 20px 60px rgba(0,0,0,.2);
+
+    animation:paperShow .8s ease;
+}
+
+.paper-header{
+
+    font-size:42px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    color:#555;
+
+    margin-bottom:35px;
+}
+
+.paper-body{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    white-space:pre-wrap;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:28px;
+
+    line-height:1.9;
+
+    color:#444;
+}
+
+.paper-body::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.paper-body::-webkit-scrollbar-thumb{
+
+    background:#c8afff;
+
+    border-radius:99px;
+
+}
+
+.cursor{
+
+    color:#8367ff;
+
+    animation:blink 1s infinite;
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+.next-btn{
+
+    margin-top:25px;
+
+    align-self:center;
+
+    border:none;
+
+    padding:18px 45px;
+
+    border-radius:16px;
+
+    background:linear-gradient(135deg,#8873ff,#ffb3d6);
+
+    color:white;
+
+    font-size:21px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.next-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.18);
+}
+
+/* ========================= */
+/* ANIMATION */
+/* ========================= */
+
+@keyframes paperShow{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes float{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+}
+
+@keyframes blink{
+
+    0%,100%{
+
+        opacity:1;
+
+    }
+
+    50%{
+
+        opacity:0;
+
+    }
+
+}
+
+@keyframes openAnim{
+
+    from{
+
+        transform:scale(.85);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media(max-width:900px){
+
+.paper{
+
+width:92vw;
+
+height:80vh;
+
+padding:28px;
+
+}
+
+.paper-header{
+
+font-size:34px;
+
+}
+
+.paper-body{
+
+font-size:22px;
+
+}
+
+.envelope-img{
+
+width:240px;
+
+}
+
+.open-envelope-only{
+
+width:250px;
+
+}
+
+}
