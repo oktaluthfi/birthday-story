@@ -6,7 +6,7 @@ import LoginScene from "./components/LoginScene";
 import SuccessScene from "./components/SuccessScene";
 import FailedScene from "./components/FailedScene";
 import LetterScene from "./components/LetterScene";
-import Memories from "./components/Memories";
+import Memories from "./components/memories";
 import EndingScene from "./components/EndingScene";
 
 import music from "./assets/music/birthday.mp3";
